@@ -1,30 +1,39 @@
 #include <stdio.h>
+
 /**
- * main - print all combination of two digit-numbers
- * Return: return 0 and exit
- */
+*main - Entry point
+*
+*description: the description
+*
+*Return: Always 0 (Success)
+**/
 int main(void)
 {
-	int n1, n2;
+	int a = 0;
+	int b;
 
-	for (n1 = 0; n1 <= 99; n1++)
+	while (a <= 98)
 	{
-		for (n2 = 0; n2 <= 99; n2++)
+		b = a + 1;
+		while (b <= 99)
 		{
-			if (n1 < n2 && n1 != n2)
+			putchar(a / 10 % 10 + '0');
+			putchar(a % 10 + '0');
+			putchar(' ');
+			putchar(b / 10 % 10 + '0');
+			putchar(b % 10 + '0');
+			if (a == 98 && b == 99)
 			{
-				putchar((n1 / 10) + '0');
-				putchar((n1 % 10) + '0');
-				putchar(' ');
-				putchar((n2 / 10) + '0');
-				putchar((n2 % 10) + '0');
-				if (n1 != 98 || n2 != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar('\n');
 			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			b++;
 		}
+		a++;
 	}
-	putchar('\n');
 	return (0);
+}	
