@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 /**
 *main - Entry point
@@ -32,3 +33,6 @@ putchar(sp);
 putchar(n1);
 return (0);
 }
+=======
+
+>>>>>>> c15a7321e7459f6a2e8bf9cb04f294b1c31cb621
