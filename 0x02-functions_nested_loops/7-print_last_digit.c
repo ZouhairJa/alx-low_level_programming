@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 *print_last_digit - Entry point
 *@i: the number.
