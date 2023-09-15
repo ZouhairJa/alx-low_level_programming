@@ -1,25 +1,27 @@
 #include "main.h"
+
 /**
- * print_triangle - writes the character c to stdout
- * @size: The size of triangle
+ * print_triangle - check the code
+ * @size: param for int
+ * Return: Always 0.
  */
 void print_triangle(int size)
 {
-	int i, l, n;
+	int i, z;
 
 	for (i = 1; i <= size; i++)
 	{
-		for (l = size; l > i; l--)
-		{
-			_putchar(' ');
-		}
-		for (n = 1; n <= i; n++)
-		{
-			_putchar(35);
-		}
-		_putchar('\n');
+	for (z = 1; z <= size; z++)
+	{
+	if ((i + z) <= size)
+	{
+	_putchar(' ');
+	}
+	else
+	_putchar(35);
+	}
+	_putchar('\n');
 	}
 	if (size <= 0)
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
+}
