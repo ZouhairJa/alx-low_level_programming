@@ -7,17 +7,17 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (omar_needs_this(n, 0));
+	return (zouhair_needs_this(n, 0));
 }
 
 /**
- * omar_needs_this - function added
+ * zouhair_needs_this - function added
  * @n: the number
  * @s: root
  * Return: the natural square root of n
  * On error, -1 is returned.
  */
-int omar_needs_this(int n, int s)
+int zouhair_needs_this(int n, int s)
 {
 	if (s * s == n)
 	{
@@ -29,6 +29,6 @@ int omar_needs_this(int n, int s)
 	}
 	else
 	{
-		return (omar_needs_this(n, s + 1));
+		return (zouhair_needs_this(n, s + 1));
 	}
 }
