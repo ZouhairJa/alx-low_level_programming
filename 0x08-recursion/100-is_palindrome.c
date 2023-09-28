@@ -7,7 +7,7 @@
  */
 int is_palindrome(char *s)
 {
-	return (omar_palindrome(s, _strlen_recursion(s) - 1));
+	return (zouhair_palindrome(s, _strlen_recursion(s) - 1));
 }
 
 /**
@@ -31,13 +31,13 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * omar_palindrome - if a string is a palindrome
+ * zouhair_palindrome - if a string is a palindrome
  * @s: string
  * @i: difference
  * Return: On success 1
  * other ways 0 returned
  */
-int omar_palindrome(char *s, int i)
+int zouhair_palindrome(char *s, int i)
 {
 	if (*s == *(s + i))
 	{
@@ -46,7 +46,7 @@ int omar_palindrome(char *s, int i)
 
 		else
 		{
-			return (omar_palindrome((s + 1), i - 2));
+			return (zouhair_palindrome((s + 1), i - 2));
 		}
 	}
 	else
