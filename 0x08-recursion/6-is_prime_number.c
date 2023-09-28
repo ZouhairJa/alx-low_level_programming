@@ -13,18 +13,18 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (omar_prime_fun(n, 2));
+		return (zouhair_prime_fun(n, 2));
 	}
 }
 
 /**
- * omar_prime_fun - if the input integer is a prime number
+ * zouhair_prime_fun - if the input integer is a prime number
  * @n: number
  * @s: div
  * Return: On success 1.
  * Other ways, 0 is returned.
  */
-int omar_prime_fun(int n, int s)
+int zouhair_prime_fun(int n, int s)
 {
 	if (n % s == 0 && s < n)
 	{
@@ -36,6 +36,6 @@ int omar_prime_fun(int n, int s)
 	}
 	else
 	{
-		return (omar_prime_fun(n, s + 1));
+		return (zouhair_prime_fun(n, s + 1));
 	}
 }
